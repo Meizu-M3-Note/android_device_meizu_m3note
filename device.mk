@@ -54,6 +54,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger \
+    charger_res_images
+
 # GPS
 PRODUCT_PACKAGES += \
     libcurl
