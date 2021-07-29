@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
     audio_policy.default \
-    libaudio-resampler
+    libaudio-resampler \
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_device.xml:system/etc/audio_device.xml \
