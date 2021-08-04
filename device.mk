@@ -77,6 +77,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcurl
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/gps/gps.conf:system/etc/gps.conf
+
 # Graphics
 PRODUCT_PACKAGES += \
     libGLES_android
