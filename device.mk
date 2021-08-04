@@ -122,7 +122,8 @@ PRODUCT_PACKAGES += \
 # Shim Libraries
 PRODUCT_PACKAGES += \
     libshim_ifc \
-    libshim_media
+    libshim_media \
+    libshim_pthread
 
 # Permissions
 PRODUCT_COPY_FILES += \

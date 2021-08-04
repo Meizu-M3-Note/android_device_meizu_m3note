@@ -16,3 +16,11 @@ LOCAL_MODULE := libshim_media
 LOCAL_CFLAGS := -Wno-unused-variable -Wno-unused-parameter
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := pthread.cpp
+LOCAL_SHARED_LIBRARIES := libbinder libc
+LOCAL_MODULE := libshim_pthread
+LOCAL_CFLAGS := -Wno-unused-variable -Wno-unused-parameter
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_SHARED_LIBRARY)
