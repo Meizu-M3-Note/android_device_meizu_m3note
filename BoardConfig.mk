@@ -49,6 +49,7 @@ BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # CM Hardware
 BOARD_USES_CYANOGEN_HARDWARE := true
+BOARD_HARDWARE_CLASS := $(DEVICE_PATH)/cmhw/
 
 # Display
 USE_OPENGL_RENDERER := true
