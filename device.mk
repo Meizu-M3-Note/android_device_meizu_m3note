@@ -79,7 +79,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    libcurl
+    libcurl \
+    libnl_2
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/gps/gps.conf:system/etc/gps.conf
