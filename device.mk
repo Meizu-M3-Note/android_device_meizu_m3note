@@ -135,7 +135,8 @@ PRODUCT_COPY_FILES += \
 # Props
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
-    ro.mount.fs=EXT4
+    ro.mount.fs=EXT4 \
+    persist.service.acm.enable=0
 
 # Rootdir
 PRODUCT_PACKAGES += \
