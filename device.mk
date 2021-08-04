@@ -39,7 +39,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.a2dp.default \
     audio.usb.default \
-    audio_policy.stub
+    audio_policy.default
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_device.xml:system/etc/audio_device.xml \
