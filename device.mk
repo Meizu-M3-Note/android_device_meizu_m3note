@@ -59,6 +59,10 @@ PRODUCT_PACKAGES += \
     charger \
     charger_res_images
 
+# CMActions
+PRODUCT_PACKAGES += \
+    CMActions
+
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     e2fsck \

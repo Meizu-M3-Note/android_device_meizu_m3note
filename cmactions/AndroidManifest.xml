@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyanogenmod.settings.device"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system"
+    >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/device_settings_app_name"
+        android:persistent="true"
+        android:icon="@mipmap/ic_launcher_settings"
+        android:theme="@android:style/Theme.Material.Settings" >
+
+        <receiver android:name="com.cyanogenmod.settings.device.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- stub to ensure its loaded - DO NOT REMOVE -->
+        <activity android:name=".KeyHandler"/>
+
+        <activity
+            android:name=".TouchscreenGestureSettings"
+            android:label="@string/screen_gestures_panel_title">
+            <intent-filter>
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.device" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_gestures" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/screen_gestures_panel_summary" />
+        </activity>
+
+    </application>
+
+</manifest>

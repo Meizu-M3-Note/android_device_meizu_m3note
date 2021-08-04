@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2013-2014 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="device_settings_app_name">Off-Screen Gestures</string>
+
+    <!-- Gesture shortcuts -->
+    <string name="screen_gestures_panel_title">Scorciatoie gesture</string>
+    <string name="screen_gestures_panel_summary">Usa le gesture mentre lo schermo è spento</string>
+
+    <string name="touchscreen_control_gesture_head">Gesture a schermo spento</string>
+    <string name="touchscreen_control_gesture_title">Abilita gesture</string>
+    <string name="gesture_category_title">Gesture disponibili</string>
+
+    <string name="touchscreen_dtp_gesture_title">Doppio Tap</string>
+    <string name="touchscreen_x_left_gesture_title">Swipe a Sinistra</string>
+    <string name="touchscreen_x_right_gesture_title">Swipe a Destra</string>
+    <string name="touchscreen_y_down_gesture_title">Swipe in Basso</string>
+    <string name="touchscreen_y_up_gesture_title">Swipe in Alto</string>
+
+    <string name="touchscreen_c_gesture_title">Disegna \"c\"</string>
+    <string name="touchscreen_z_gesture_title">Disegna \"z\"</string>
+    <string name="touchscreen_s_gesture_title">Disegna \"s\"</string>
+    <string name="touchscreen_w_gesture_title">Disegna \"w\"</string>
+    <string name="touchscreen_o_gesture_title">Disegna \"o\"</string>
+    <string name="touchscreen_v_gesture_title">Disegna \"v\"</string>
+    <string name="touchscreen_e_gesture_title">Disegna \"e\"</string>
+    <string name="touchscreen_m_gesture_title">Disegna \"m\"</string>
+
+    <!-- haptic feedback  -->
+    <string name="touchscreen_extras">Extra</string>
+    <string name="haptic_feedback">Feedback aptico</string>
+    <string name="haptic_feedback_summary">Vibra quando una gesture è stata rilevata</string>
+
+    <!-- gesture actions  -->
+    <string name="disabled">Disabilitato</string>
+    <string name="wakeUp">Sveglia</string>
+    <string name="unlock">Sblocca</string>
+    <string name="play">Play/Pausa</string>
+    <string name="next">Traccia successiva</string>
+    <string name="prev">Traccia precedente</string>
+    <string name="camera">Avvia fotocamera</string>
+    <string name="flashlight">Accendi/Spegni torcia</string>
+    <string name="doNotDisturbMode">Modalità Non Disturbare</string>
+    <string name="normalMode">Modalità normale</string>
+    <string name="muteMode">Muto</string>
+
+</resources>
+

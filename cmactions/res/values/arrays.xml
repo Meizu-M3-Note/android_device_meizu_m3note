@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gesture_action_titles">
+        <item>@string/wakeUp</item>
+        <item>@string/unlock</item>
+        <item>@string/play</item>
+        <item>@string/next</item>
+        <item>@string/prev</item>
+        <item>@string/camera</item>
+        <item>@string/flashlight</item>
+        <item>@string/doNotDisturbMode</item>
+        <item>@string/normalMode</item>
+        <item>@string/muteMode</item>
+    </string-array>
+
+    <string-array name="gesture_action_values">
+        <item>wakeUp</item>
+        <item>unlock</item>
+        <item>play</item>
+        <item>next</item>
+        <item>prev</item>
+        <item>camera</item>
+        <item>flashlight</item>
+        <item>doNotDisturb</item>
+        <item>normal</item>
+        <item>mute</item>
+    </string-array>
+
+</resources>
