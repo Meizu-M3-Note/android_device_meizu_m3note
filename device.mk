@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CMActions
 
+# Doze
+PRODUCT_PACKAGES += \
+    MeizuDoze
+
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     e2fsck \
