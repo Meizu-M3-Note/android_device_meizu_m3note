@@ -26,6 +26,8 @@ ro.mtk_perf_response_time=1
 sys.ipo.pwrdncap=2
 
 # RIL
+ro.telephony.ril_class=MediaTekRIL
+ro.telephony.ril.config=fakeiccid
 rild.libpath=mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 ro.com.android.mobiledata=true
