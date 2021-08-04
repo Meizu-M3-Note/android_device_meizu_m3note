@@ -128,7 +128,9 @@ LINKER_FORCED_SHIM_LIBS := \
     /system/lib64/libmedia.so|libshim_media.so \
     /system/lib/libc.so|libshim_pthread.so \
     /system/lib64/libc.so|libshim_pthread.so \
-    /system/vendor/lib/libwvm.so|libshim_wvm.so
+    /system/vendor/lib/libwvm.so|libshim_wvm.so \
+    /system/lib/libgui_ext.so|libshim_gui.so \
+    /system/lib64/libgui_ext.so|libshim_gui.so
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X

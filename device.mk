@@ -124,7 +124,8 @@ PRODUCT_PACKAGES += \
     libshim_ifc \
     libshim_media \
     libshim_pthread \
-    libshim_wvm
+    libshim_wvm \
+    libshim_gui
 
 # Permissions
 PRODUCT_COPY_FILES += \
