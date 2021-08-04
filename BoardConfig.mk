@@ -119,6 +119,12 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/soc.4/11270000.usb3/musb-hdrc/gadget/lun%d/file
 
+# Shim Libraries
+LINKER_FORCED_SHIM_LIBS := \
+    /system/bin/thermal|libshim_ifc.so \
+    /system/lib/mtk-ril.so|libshim_ifc.so \
+    /system/lib64/mtk-ril.so|libshim_ifc.so
+
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_HOSTAPD_DRIVER := NL80211
