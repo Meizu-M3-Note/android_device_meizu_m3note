@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# GPS
+PRODUCT_PACKAGES += \
+    libcurl
+
 # Graphics
 PRODUCT_PACKAGES += \
     libGLES_android
