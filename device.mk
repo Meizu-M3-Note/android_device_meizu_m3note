@@ -105,7 +105,7 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.ssd.rc \
     init.trustonic.rc \
-    ueventd.rc
+    ueventd.mt6755.rc
 
 # WiFi
 PRODUCT_PACKAGES += \
