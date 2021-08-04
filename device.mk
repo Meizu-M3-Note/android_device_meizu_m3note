@@ -87,7 +87,8 @@ PRODUCT_COPY_FILES += \
 
 # Graphics
 PRODUCT_PACKAGES += \
-    libGLES_android
+    libGLES_android \
+    libion
 
 # Keyhandler
 PRODUCT_PACKAGES += \
