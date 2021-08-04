@@ -99,6 +99,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
     $(DEVICE_PATH)/keylayout/mtk-tpd.kl:system/usr/keylayout/mtk-tpd.kl
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    libjni_livedisplay
+
 # Media
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/media/media_codecs.xml:system/etc/media_codecs.xml \
