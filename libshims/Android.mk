@@ -35,8 +35,8 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_SRC_FILES := gui.cpp
-LOCAL_SHARED_LIBRARIES := libui
+LOCAL_SRC_FILES := gui.cpp GraphicBuffer.cpp
+LOCAL_SHARED_LIBRARIES := libui libgui libutils libcutils
 LOCAL_MODULE := libshim_gui
 LOCAL_MODULE_TAGS := optional
 LOCAL_PROPRIETARY_MODULE := true

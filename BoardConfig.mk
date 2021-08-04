@@ -134,7 +134,11 @@ LINKER_FORCED_SHIM_LIBS := \
     /system/lib/libui.so|libshim_ui.so \
     /system/lib64/libui.so|libshim_ui.so \
     /system/lib/libcam.utils.sensorlistener.so|libshim_sensorlistener.so \
-    /system/lib64/libcam.utils.sensorlistener.so|libshim_sensorlistener.so
+    /system/lib64/libcam.utils.sensorlistener.so|libshim_sensorlistener.so \
+    /system/lib/libgui.so|libshim_gui.so \
+    /system/lib64/libgui.so|libshim_gui.so \
+    /system/lib/libgui_ext.so|libshim_gui.so \
+    /system/lib64/libgui_ext.so|libshim_gui.so
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
