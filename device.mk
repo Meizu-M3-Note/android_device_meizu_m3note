@@ -123,7 +123,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_ifc \
     libshim_media \
-    libshim_pthread
+    libshim_pthread \
+    libshim_wvm
 
 # Permissions
 PRODUCT_COPY_FILES += \
