@@ -99,6 +99,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
     $(DEVICE_PATH)/keylayout/mtk-tpd.kl:system/usr/keylayout/mtk-tpd.kl
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.mt6755
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     libjni_livedisplay
