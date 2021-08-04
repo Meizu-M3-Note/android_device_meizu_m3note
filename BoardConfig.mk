@@ -53,6 +53,7 @@ BOARD_HARDWARE_CLASS := $(DEVICE_PATH)/cmhw/
 
 # Display
 USE_OPENGL_RENDERER := true
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # Disable memcpy opt (for audio libraries)
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
