@@ -51,6 +51,9 @@ BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS := $(DEVICE_PATH)/cmhw/
 
+# Connectivity
+BOARD_CONNECTIVITY_VENDOR := MediaTek
+
 # Display
 USE_OPENGL_RENDERER := true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
