@@ -162,6 +162,16 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/telephony/ecc_list.xml:system/etc/ecc_list.xml \
     $(DEVICE_PATH)/telephony/spn-conf.xml:system/etc/spn-conf.xml
 
+# Thermal
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/thermal/thermal.conf:system/etc/.tp/thermal.conf \
+    $(DEVICE_PATH)/thermal/thermal.off.conf:system/etc/.tp/thermal.off.conf \
+    $(DEVICE_PATH)/thermal/.ht120.mtc:system/etc/.tp/.ht120.mtc \
+    $(DEVICE_PATH)/thermal/.thermal_meta.conf:system/etc/.tp/.thermal_meta.conf \
+    $(DEVICE_PATH)/thermal/.thermal_policy_00:system/etc/.tp/.thermal_policy_00 \
+    $(DEVICE_PATH)/thermal/.thermal_policy_01:system/etc/.tp/.thermal_policy_01 \
+    $(DEVICE_PATH)/thermal/.thermal_policy_02:system/etc/.tp/.thermal_policy_02
+
 # WiFi
 PRODUCT_PACKAGES += \
     libwpa_client \
