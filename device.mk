@@ -47,6 +47,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/AudioParamOptions.xml:system/etc/audio_param/AudioParamOptions.xml \
     $(DEVICE_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Graphics
 PRODUCT_PACKAGES += \
     libGLES_android
