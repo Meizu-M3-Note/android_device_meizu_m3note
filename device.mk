@@ -126,7 +126,8 @@ PRODUCT_PACKAGES += \
     libshim_pthread \
     libshim_wvm \
     libshim_gui \
-    libshim_ui
+    libshim_ui \
+    libshim_sensorlistener
 
 # Permissions
 PRODUCT_COPY_FILES += \
