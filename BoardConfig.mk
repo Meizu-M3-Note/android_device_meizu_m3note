@@ -94,6 +94,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6755
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 
+# Seccomp
+BOARD_SECCOMP_POLICY += $(DEVICE_PATH)/seccomp
+
 # System Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
