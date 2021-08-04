@@ -91,7 +91,7 @@ PRODUCT_PACKAGES += \
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
-    $(DEVICE_PATH)/keylayout/mtk-tpd.idc:system/usr/idc/mtk-tpd.idc
+    $(DEVICE_PATH)/keylayout/mtk-tpd.kl:system/usr/keylayout/mtk-tpd.kl
 
 # Media
 PRODUCT_COPY_FILES += \
