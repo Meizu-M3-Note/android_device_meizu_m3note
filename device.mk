@@ -81,6 +81,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libGLES_android
 
+# Keyhandler
+PRODUCT_PACKAGES += \
+    com.cyanogenmod.keyhandler
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
