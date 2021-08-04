@@ -152,6 +152,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.service.acm.enable=0 \
     camera.disable_zsl_mode=1
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
+
 # Rootdir
 PRODUCT_PACKAGES += \
     enableswap.sh \
