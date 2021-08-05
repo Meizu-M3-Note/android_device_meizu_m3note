@@ -19,7 +19,7 @@ net_domain(viarild)
 allow viarild self:netlink_route_socket nlmsg_write;
 allow viarild kernel:system module_request;
 #unix_socket_connect(viarild, property, init) #@daniel, use set_prop()
-set_prop(viarild, init)
+# set_prop(viarild, init)
 allow viarild self:capability { setuid net_admin net_raw };
 allow viarild alarm_device:chr_file rw_file_perms;
 allow viarild cgroup:dir create_dir_perms;
@@ -40,13 +40,13 @@ allow viarild system_file:file x_file_perms;
 allow viarild proc:file write;
 
 # property service
-allow statusd system_prop:property_service set;
-allow viarild radio_prop:property_service set;
-allow viarild net_radio_prop:property_service set;
-allow viarild system_radio_prop:property_service set;
-allow viarild persist_ril_prop:property_service set;
-auditallow viarild net_radio_prop:property_service set;
-auditallow viarild system_radio_prop:property_service set;
+# allow statusd system_prop:property_service set;
+# allow viarild radio_prop:property_service set;
+# allow viarild net_radio_prop:property_service set;
+# allow viarild system_radio_prop:property_service set;
+# allow viarild persist_ril_prop:property_service set;
+# auditallow viarild net_radio_prop:property_service set;
+# auditallow viarild system_radio_prop:property_service set;
 
 # Read/Write to uart driver (for GPS)
 allow viarild gps_device:chr_file rw_file_perms;
@@ -73,7 +73,7 @@ allow viarild misc_device:chr_file { read write open };
 #allow viarild platformblk_device:blk_file { read write open };
 allow viarild proc_lk_env:file { read ioctl open };
 allow viarild sysfs_vcorefs_pwrctrl:file { open write };
-allow viarild ril_active_md_prop:property_service set;
+# allow viarild ril_active_md_prop:property_service set;
 
 #Search permission for findPidByName
 allow statusd domain:dir search;

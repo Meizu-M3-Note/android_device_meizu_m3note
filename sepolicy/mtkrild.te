@@ -19,7 +19,7 @@ net_domain(mtkrild)
 allow mtkrild self:netlink_route_socket nlmsg_write;
 allow mtkrild kernel:system module_request;
 #unix_socket_connect(mtkrild, property, init) #@daniel, use set_prop()
-set_prop(mtkrild, init)
+# set_prop(mtkrild, init)
 allow mtkrild self:capability { setuid net_admin net_raw };
 allow mtkrild alarm_device:chr_file rw_file_perms;
 allow mtkrild cgroup:dir create_dir_perms;
@@ -45,13 +45,13 @@ allow mtkrild eemcs_device:chr_file ioctl;
 allow mtkrild para_block_device:blk_file { read write open};
 
 # property service
-allow mtkrild radio_prop:property_service set;
-allow mtkrild net_radio_prop:property_service set;
-allow mtkrild system_radio_prop:property_service set;
-allow mtkrild persist_ril_prop:property_service set;
-auditallow mtkrild net_radio_prop:property_service set;
-auditallow mtkrild system_radio_prop:property_service set;
-allow mtkrild ril_cdma_report_prop:property_service set;
+# allow mtkrild radio_prop:property_service set;
+# allow mtkrild net_radio_prop:property_service set;
+# allow mtkrild system_radio_prop:property_service set;
+# allow mtkrild persist_ril_prop:property_service set;
+# auditallow mtkrild net_radio_prop:property_service set;
+# auditallow mtkrild system_radio_prop:property_service set;
+# allow mtkrild ril_cdma_report_prop:property_service set;
 
 # Read/Write to uart driver (for GPS)
 allow mtkrild gps_device:chr_file rw_file_perms;
@@ -77,10 +77,10 @@ allow mtkrild misc_device:chr_file { read write open };
 #allow mtkrild platformblk_device:blk_file { read write open };
 allow mtkrild proc_lk_env:file rw_file_perms;
 allow mtkrild sysfs_vcorefs_pwrctrl:file { open write };
-allow mtkrild ril_active_md_prop:property_service set;
-allow mtkrild ril_mux_report_case_prop:property_service set;
-allow mtkrild ctl_muxreport-daemon_prop:property_service set;
-allow mtkrild persist_service_atci_prop:property_service set;
+# allow mtkrild ril_active_md_prop:property_service set;
+# allow mtkrild ril_mux_report_case_prop:property_service set;
+# allow mtkrild ctl_muxreport-daemon_prop:property_service set;
+# allow mtkrild persist_service_atci_prop:property_service set;
 allow mtkrild block_device:dir search;
 #allow mtkrild platformblk_device:dir search;
 allow mtkrild platform_app:fd use;

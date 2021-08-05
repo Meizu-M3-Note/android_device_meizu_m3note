@@ -10,7 +10,7 @@ typeattribute system_app mlstrustedsubject;
 # Stage: BaseUT
 # Purpose :[CdsInfo][CdsInfo uses net shell commands to get network information and write WI-FI MAC address by NVRAM]
 # Package Name: com.mediatek.connectivity
-allow system_app nvram_agent_binder:binder call;
+# allow system_app nvram_agent_binder:binder call;
 
 # Date: 2014/08/01
 # Operation: BaseUT
@@ -51,7 +51,7 @@ allow system_app atci_service:unix_stream_socket connectto;
 # Stage: BaseUT
 # Purpose: [BatteryWarning][View update graphics]
 # Package Name: com.mediatek.batterywarning
-allow system_app guiext-server:binder { transfer call };
+# allow system_app guiext-server:binder { transfer call };
 
 # Date: 2015/07/24
 # Stage: BaseUT
@@ -101,7 +101,7 @@ allow system_app mtk_consumerir_service:service_manager add;
 # Purpose : [Privacy protection lock][com.mediatek.ppl need to bind ppl_agent service to read/write nvram file]
 # Package name : com.mediatek.ppl
 
-allow system_app ppl_agent:binder call;
+# allow system_app ppl_agent:binder call;
 
 # Date: 2014/10/7
 # Operation: SQC
@@ -138,7 +138,7 @@ allow system_app qemu_pipe_device:chr_file rw_file_perms;
 # Operation: SQC
 # Purpose : [Settings][Battery module will call batterystats API, and it will read /sys/kernel/debug/wakeup_sources]
 # Package: com.android.settings
-allow system_app debugfs:file r_file_perms;
+# allow system_app debugfs:file r_file_perms;
 
 # Date : 2014/11/18
 # Operation : SQC
@@ -155,7 +155,7 @@ allow system_app proc_secmem:file rw_file_perms;
 # Operation: SQC
 # Purpose: [Settings][Developer options module will communicate with all Services through binder call]
 # Package: com.android.settings
-binder_call(system_app, MtkCodecService)
+# binder_call(system_app, MtkCodecService)
 
 # Date : 2014/11/26
 # Operation: SQC

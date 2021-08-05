@@ -36,8 +36,8 @@ allow nvram_daemon nvdata_device:blk_file rw_file_perms;
 # Date : WK14.34
 # Operation : Migration 
 # Purpose : the option is used to tell that if other processes can access nvram. 
-allow nvram_daemon system_prop:property_service set;
-allow nvram_daemon mtk_wifi_prop:property_service set;
+# allow nvram_daemon system_prop:property_service set;
+# allow nvram_daemon mtk_wifi_prop:property_service set;
 
 # Date : WK14.35
 # Operation : chown folder and file permission 
@@ -61,9 +61,9 @@ allow nvram_daemon init:unix_stream_socket connectto;
 # Purpose: for property set
 allow nvram_daemon property_socket:sock_file write;
 #allow nvram_daemon sysfs:file write;
-allow nvram_daemon system_data_file:file { read write open getattr setattr create };
+# allow nvram_daemon system_data_file:file { read write open getattr setattr create };
 allow nvram_daemon self:capability { fowner chown dac_override fsetid };
-allow nvram_daemon system_data_file:dir { create write add_name };
+# allow nvram_daemon system_data_file:dir { create write add_name };
 
 # Purpose: for backup
 allow nvram_daemon nvram_device:chr_file {read write open ioctl};
@@ -88,6 +88,6 @@ allow nvram_daemon sysfs:file { write read open };
 allow nvram_daemon rootfs:dir { read open };
 allow nvram_daemon rootfs:file r_file_perms;
 allow nvram_daemon toolbox_exec:file { r_file_perms execute execute_no_trans };
-allow nvram_daemon default_prop:property_service set;
+# allow nvram_daemon default_prop:property_service set;
 allow nvram_daemon rootfs:lnk_file { getattr };
 

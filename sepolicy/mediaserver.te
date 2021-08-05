@@ -5,19 +5,19 @@
 # Date : WK15.02
 # Operation : 120Hz Feature SQC
 # Purpose : for 120Hz Smart Switch
-allow mediaserver mtk_rrc_device:chr_file { read write ioctl open };
+# allow mediaserver mtk_rrc_device:chr_file { read write ioctl open };
 
 # Date : WK14.31
 # Operation : Migration
 # Purpose : for L early bring up.
-allow mediaserver camera_isp_device:chr_file { read write ioctl open };
-allow mediaserver kd_camera_hw_device:chr_file { read write ioctl open };
+# allow mediaserver camera_isp_device:chr_file { read write ioctl open };
+# allow mediaserver kd_camera_hw_device:chr_file { read write ioctl open };
 allow mediaserver self:capability { setuid ipc_lock };
 allow mediaserver sysfs_wake_lock:file { read write open };
-allow mediaserver MTK_SMI_device:chr_file { read ioctl open };
-allow mediaserver camera_pipemgr_device:chr_file { read ioctl open };
-allow mediaserver kd_camera_flashlight_device:chr_file { read write ioctl open };
-allow mediaserver lens_device:chr_file { read write ioctl open };
+# allow mediaserver MTK_SMI_device:chr_file { read ioctl open };
+# allow mediaserver camera_pipemgr_device:chr_file { read ioctl open };
+# allow mediaserver kd_camera_flashlight_device:chr_file { read write ioctl open };
+# allow mediaserver lens_device:chr_file { read write ioctl open };
 allow mediaserver self:capability sys_nice;
 
 
@@ -37,14 +37,14 @@ allow mediaserver fuse:file unlink;
 # Date : WK14.34
 # Operation : Migration
 # Purpose : for bring up
-allow mediaserver nvram_device:chr_file { open read write };
+# allow mediaserver nvram_device:chr_file { open read write };
 allow mediaserver self:netlink_kobject_uevent_socket { create setopt bind };
 allow mediaserver self:capability { net_admin dac_override };
 
 # Date : WK14.34
 # Operation : Migration
 # Purpose : VP/VR
-allow mediaserver devmap_device:chr_file { ioctl };
+# allow mediaserver devmap_device:chr_file { ioctl };
 
 # Date : WK14.34
 # Operation : Migration
@@ -55,7 +55,7 @@ allow mediaserver system_data_file:file open;
 # Date : WK14.36
 # Operation : Migration
 # Purpose : guiext service for VP
-allow mediaserver guiext-server:binder { transfer call };
+# allow mediaserver guiext-server:binder { transfer call };
 
 # Date : WK14.36
 # Operation : Migration
@@ -72,28 +72,28 @@ allow mediaserver media_wfd_prop:property_service set;
 # Date : WK14.37
 # Operation : Migration
 # Purpose : camera ioctl
-allow mediaserver camera_sysram_device:chr_file { read ioctl open };
+# allow mediaserver camera_sysram_device:chr_file { read ioctl open };
 
 # Date : WK14.36
 # Operation : Migration
 # Purpose : VDEC/VENC device node
-allow mediaserver Vcodec_device:chr_file { read write ioctl open };
+# allow mediaserver Vcodec_device:chr_file { read write ioctl open };
 
 # Date : WK14.36
 # Operation : Migration
 # Purpose : MMProfile debug
 # userdebug_or_eng(`
-allow mediaserver debugfs:file {read ioctl getattr};
+# allow mediaserver debugfs:file {read ioctl getattr};
 # ')
 
 # Date : WK14.36
 # Operation : Migration
 # Purpose : bring up
-allow mediaserver MtkCodecService:binder call;
-allow mediaserver ccci_device:chr_file { read write ioctl open };
-allow mediaserver eemcs_device:chr_file { read write ioctl open };
-allow mediaserver devmap_device:chr_file { read open };
-allow mediaserver ebc_device:chr_file { read write ioctl open };
+# allow mediaserver MtkCodecService:binder call;
+# allow mediaserver ccci_device:chr_file { read write ioctl open };
+# allow mediaserver eemcs_device:chr_file { read write ioctl open };
+# allow mediaserver devmap_device:chr_file { read open };
+# allow mediaserver ebc_device:chr_file { read write ioctl open };
 allow mediaserver nvram_device:blk_file { read write open };
 allow mediaserver mmcblk0_block_device:blk_file { read write open };
 #allow mediaserver nvram_data_file:dir { write search };
@@ -104,7 +104,7 @@ allow mediaserver mmcblk0_block_device:blk_file { read write open };
 # Operation : Migration
 # Purpose : for SW codec VP/VR
 #allow mediaserver mtk_device:chr_file { read write ioctl open };
-allow mediaserver mtk_sched_device:chr_file { read write ioctl open };
+# allow mediaserver mtk_sched_device:chr_file { read write ioctl open };
 
 # Date : WK14.36
 # Operation : Migration
@@ -121,26 +121,26 @@ allow mediaserver block_device:dir { write search };
 # Date : WK14.38
 # Operation : Migration
 # Purpose : FM driver access
-allow mediaserver fm_device:chr_file { read write ioctl open };
+# allow mediaserver fm_device:chr_file { read write ioctl open };
 
 # Data : WK14.38
 # Operation : Migration
 # Purpose : for VP/VR
-allow mediaserver block_device:dir search;
-allow mediaserver FM50AF_device:chr_file { read write ioctl open };
-allow mediaserver AD5820AF_device:chr_file { read write ioctl open };
-allow mediaserver DW9714AF_device:chr_file { read write ioctl open };
-allow mediaserver DW9814AF_device:chr_file { read write ioctl open };
-allow mediaserver AK7345AF_device:chr_file { read write ioctl open };
-allow mediaserver DW9714A_device:chr_file { read write ioctl open };
-allow mediaserver LC898122AF_device:chr_file { read write ioctl open };
-allow mediaserver LC898212AF_device:chr_file { read write ioctl open };
-allow mediaserver BU6429AF_device:chr_file { read write ioctl open };
-allow mediaserver DW9718AF_device:chr_file { read write ioctl open };
-allow mediaserver BU64745GWZAF_device:chr_file { read write ioctl open };
-allow mediaserver MAINAF_device:chr_file { read write ioctl open };
-allow mediaserver MAIN2AF_device:chr_file { read write ioctl open };
-allow mediaserver SUBAF_device:chr_file { read write ioctl open };
+# allow mediaserver block_device:dir search;
+# allow mediaserver FM50AF_device:chr_file { read write ioctl open };
+# allow mediaserver AD5820AF_device:chr_file { read write ioctl open };
+# allow mediaserver DW9714AF_device:chr_file { read write ioctl open };
+# allow mediaserver DW9814AF_device:chr_file { read write ioctl open };
+# allow mediaserver AK7345AF_device:chr_file { read write ioctl open };
+# allow mediaserver DW9714A_device:chr_file { read write ioctl open };
+# allow mediaserver LC898122AF_device:chr_file { read write ioctl open };
+# allow mediaserver LC898212AF_device:chr_file { read write ioctl open };
+# allow mediaserver BU6429AF_device:chr_file { read write ioctl open };
+# allow mediaserver DW9718AF_device:chr_file { read write ioctl open };
+# allow mediaserver BU64745GWZAF_device:chr_file { read write ioctl open };
+# allow mediaserver MAINAF_device:chr_file { read write ioctl open };
+# allow mediaserver MAIN2AF_device:chr_file { read write ioctl open };
+# allow mediaserver SUBAF_device:chr_file { read write ioctl open };
 
 # Data : WK14.38
 # Operation : Migration
@@ -151,7 +151,7 @@ allow mediaserver surfaceflinger:file { read open };
 # Data : WK14.38
 # Operation : Migration
 # Purpose : bring up
-allow mediaserver bootanim:binder { transfer call };
+# allow mediaserver bootanim:binder { transfer call };
 #allow mediaserver tmpfs:lnk_file read;
 #allow mediaserver default_android_service:service_manager { add };
 
@@ -169,17 +169,17 @@ allow mediaserver fuse:file append;
 # Date : WK14.39
 # Operation : Migration
 # Purpose : FDVT Driver
-allow mediaserver camera_fdvt_device:chr_file { read write ioctl open };
+# allow mediaserver camera_fdvt_device:chr_file { read write ioctl open };
 
 # Date : WK14.39
 # Operation : Migration
 # Purpose : MJC Driver
-allow mediaserver MJC_device:chr_file { read write ioctl open };
+# allow mediaserver MJC_device:chr_file { read write ioctl open };
 
 # Date : WK14.39
 # Operation : Migration
 # Purpose : APE PLAYBACK
-binder_call(mediaserver,MtkCodecService)
+# binder_call(mediaserver,MtkCodecService)
 
 # Data : WK14.39
 # Operation : Migration
@@ -191,38 +191,38 @@ allow mediaserver audiohal_prop:property_service set;
 # Purpose : HW encrypt SW codec
 allow mediaserver mediaserver_data_file:file { create open read write setattr };
 allow mediaserver mediaserver_data_file:dir { search getattr open read write setattr add_name };
-allow mediaserver sec_device:chr_file { read open ioctl };
+# allow mediaserver sec_device:chr_file { read open ioctl };
 
 # Date : WK14.39
 # Operation : Migration
 # Purpose : WFD UIBC Driver
-allow mediaserver uibc_device:chr_file { read write getattr ioctl open };
+# allow mediaserver uibc_device:chr_file { read write getattr ioctl open };
 
 # Date : WK14.40
 # Operation : Migration
 # Purpose : HDMI driver access
-allow mediaserver graphics_device:chr_file { read write ioctl open };
+# allow mediaserver graphics_device:chr_file { read write ioctl open };
 
 # Date : WK14.40
 # Operation : Migration
 # Purpose : Smartpa
-allow mediaserver smartpa_device:chr_file { read write ioctl open };
+# allow mediaserver smartpa_device:chr_file { read write ioctl open };
 
 # Date : WK14.40
 # Operation : Migration
 # Purpose : Smartpa
-allow mediaserver smartpa1_device:chr_file { read write ioctl open };
+# allow mediaserver smartpa1_device:chr_file { read write ioctl open };
 
 # Data : WK14.40
 # Operation : Migration
 # Purpose : permit 'call' by audio tunning tool audiocmdservice_atci
-allow mediaserver audiocmdservice_atci:binder call;
-binder_call(mediaserver,audiocmdservice_atci)
+# allow mediaserver audiocmdservice_atci:binder call;
+# binder_call(mediaserver,audiocmdservice_atci)
 
 # Date : WK14.40
 # Operation : Migration
 # Purpose : mtk_jpeg
-allow mediaserver mtk_jpeg_device:chr_file { read ioctl open };
+# allow mediaserver mtk_jpeg_device:chr_file { read ioctl open };
 
 # Date : WK14.41
 # Operation : Migration
@@ -234,25 +234,25 @@ allow mediaserver mtk_jpeg_device:chr_file { read ioctl open };
 # Date : WK14.41
 # Operation : Migration
 # Purpose : WFD HID Driver
-allow mediaserver uhid_device:chr_file { read write ioctl open };
+# allow mediaserver uhid_device:chr_file { read write ioctl open };
 
 # Date : WK14.41
 # Operation : Migration
 # Purpose : Camera EEPROM Calibration
-allow mediaserver CAM_CAL_DRV_device:chr_file { read write ioctl open };
+# allow mediaserver CAM_CAL_DRV_device:chr_file { read write ioctl open };
 
 # Date : WK14.43
 # Operation : Migration
 # Purpose : VOW
-allow mediaserver vow_device:chr_file { read write ioctl open };
+# allow mediaserver vow_device:chr_file { read write ioctl open };
 
 # Date: WK14.44
 # Operation : Migration
 # Purpose : EVDO
 allow mediaserver rpc_socket:sock_file write;
 allow mediaserver statusd:unix_stream_socket connectto;
-allow mediaserver ttySDIO_device:chr_file { read write };
-allow mediaserver ttySDIO_device:chr_file open;
+# allow mediaserver ttySDIO_device:chr_file { read write };
+# allow mediaserver ttySDIO_device:chr_file open;
 
 # Data: WK14.44
 # Operation : Migration
@@ -270,7 +270,7 @@ allow mediaserver sysfs_lowmemorykiller:file { read open };
 allow mediaserver mobicore:unix_stream_socket connectto;
 allow mediaserver mobicore_data_file:dir search;
 allow mediaserver mobicore_data_file:file { getattr read open lock};
-allow mediaserver mobicore_user_device:chr_file { read write open ioctl};
+# allow mediaserver mobicore_user_device:chr_file { read write open ioctl};
 allow mediaserver persist_data_file:dir { create write add_name search};
 allow mediaserver persist_data_file:file { read write create open getattr };
 
@@ -286,7 +286,7 @@ allow mediaserver thermal_manager_data_file:dir { search getattr open read write
 # Date : WK14.46
 # Operation : Migration
 # Purpose : for MTK Emulator HW GPU
-allow mediaserver qemu_pipe_device:chr_file rw_file_perms;
+# allow mediaserver qemu_pipe_device:chr_file rw_file_perms;
 
 # Date : WK14.46
 # Operation : Migration
@@ -364,7 +364,7 @@ allow mediaserver proc_secmem:file ioctl;
 # Date : WK15.03
 # Operation : Migration
 # Purpose : offloadservice
-allow mediaserver offloadservice_device:chr_file { read write ioctl open };
+# allow mediaserver offloadservice_device:chr_file { read write ioctl open };
 
 # Date : WK15.11
 # Operation : SRS
@@ -375,7 +375,7 @@ allow mediaserver offloadservice_device:chr_file { read write ioctl open };
 # Date : WK15.30
 # Operation : Migration
 # Purpose : for device bring up, not to block early migration/sanity
-allow mediaserver system_file:file execmod;
+# allow mediaserver system_file:file execmod;
 allow mediaserver guiext-server_service:service_manager find;
 
 # Date : WK15.31
@@ -426,7 +426,7 @@ allow mediaserver surfaceflinger:fifo_file {read write};
 # Date : WK15.36
 # Operation : ViLTE
 # Purpose : for ViLTE - set VTservice has permission to access me
-allow mediaserver vtservice:binder { transfer call };
+# allow mediaserver vtservice:binder { transfer call };
 allow mediaserver vtservice:fd use;
 
 # Date : WK15.38
@@ -435,7 +435,7 @@ allow mediaserver vtservice:fd use;
 allow mediaserver pq_service:service_manager { find };
 
 # Nougat
-allow mediaserver device:chr_file { read write open ioctl };
+# allow mediaserver device:chr_file { read write open ioctl };
 allow mediaserver mediatek_prop:file { read open getattr };
 allow mediaserver proc:file { read open ioctl };
 allow mediaserver sysfs:file { read open };
