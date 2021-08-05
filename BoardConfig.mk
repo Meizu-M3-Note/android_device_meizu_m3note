@@ -130,7 +130,7 @@ LINKER_FORCED_SHIM_LIBS := \
     /system/lib64/libc.so|libshim_pthread.so \
     /system/vendor/lib/libwvm.so|libshim_wvm.so \
     /system/lib/libgui_ext.so|libshim_gui.so \
-    /system/lib64/libgui_ext.so|libshim_gui.so
+    /system/lib64/libgui_ext.so|libshim_gui.so \
     /system/lib/libui.so|libshim_ui.so \
     /system/lib64/libui.so|libshim_ui.so \
     /system/lib/libcam.utils.sensorlistener.so|libshim_sensorlistener.so \
