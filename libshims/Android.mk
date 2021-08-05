@@ -52,7 +52,7 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_SRC_FILES := sensors.cpp
+LOCAL_SRC_FILES := sensor.cpp
 LOCAL_SHARED_LIBRARIES := liblog libcutils libgui libbinder libutils
 LOCAL_MODULE := libshim_sensorlistener
 LOCAL_MODULE_TAGS := optional
