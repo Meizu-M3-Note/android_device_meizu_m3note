@@ -43,7 +43,7 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_SRC_FILES := ui_shim.cpp
+LOCAL_SRC_FILES := ui.cpp
 LOCAL_SHARED_LIBRARIES := libui libgui
 LOCAL_MODULE := libshim_ui
 LOCAL_MODULE_TAGS := optional
