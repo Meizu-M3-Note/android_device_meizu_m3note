@@ -21,6 +21,10 @@
 #include <ui/GraphicBufferMapper.h>
 #include <ui/PixelFormat.h>
 
+#include <ui/GraphicBuffer.h>
+#include <gui/BufferQueue.h>
+#include <media/stagefright/MediaBuffer.h>
+
 namespace android {
 static uint64_t getUniqueId() {
     static volatile int32_t nextId = 0;
@@ -43,3 +47,7 @@ GraphicBuffer::GraphicBuffer(uint32_t inWidth, uint32_t inHeight,
     mInitCheck = initSize(inWidth, inHeight, inFormat, inUsage, "<Unknown>");
 }
 };
+
+extern "C" {
+    void _ZN7android22IGraphicBufferConsumer10BufferItemC1Ev () {}
+}
