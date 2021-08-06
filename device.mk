@@ -181,7 +181,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     enableswap.sh \
     fstab.mt6755 \
-    init.aee.rc \
     init.modem.rc \
     init.mt6755.rc \
     init.mt6755.usb.rc \
