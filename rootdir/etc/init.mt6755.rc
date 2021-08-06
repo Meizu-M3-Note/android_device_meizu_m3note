@@ -96,6 +96,9 @@ on charger
     write /sys/devices/platform/mt_usb/cmode 0
 
 on fs
+    # Legacy partition path support
+    symlink /dev/block/platform/soc /dev/block/platform/mtk-msdc.0
+
     write /proc/bootprof "INIT:Mount_START"
     mount_all /fstab.mt6755
     exec /system/bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/platform/mtk-msdc.0/by-name/userdata
