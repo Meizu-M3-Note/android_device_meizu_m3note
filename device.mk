@@ -131,7 +131,8 @@ PRODUCT_PACKAGES += \
     libshim_sensorlistener \
     libshim_program_binary \
     libshim_surface \
-    libshim_icu
+    libshim_icu \
+    libshim_ssl
 
 # Permissions
 PRODUCT_COPY_FILES += \
