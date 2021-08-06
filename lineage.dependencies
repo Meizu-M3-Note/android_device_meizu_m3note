@@ -16,5 +16,11 @@
     "repository": "android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
     "branch": "cm-14.1"
+  },
+  {
+    "remote": "LineageOS"
+    "repository": "android_external_stlport",
+    "target_path": "external/stlport",
+    "branch": "cm-14.1"
   }
 ]
