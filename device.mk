@@ -187,7 +187,6 @@ PRODUCT_PACKAGES += \
     init.mt6755.usb.rc \
     init.nvdata.rc \
     init.project.rc \
-    init.ssd.rc \
     init.trustonic.rc \
     ueventd.mt6755.rc
 
