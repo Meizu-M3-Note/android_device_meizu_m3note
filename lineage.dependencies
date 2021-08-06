@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "Meizu-M3-Note"
+    "repository": "android_kernel_meizu_m3note",
+    "target_path": "kernel/meizu/m3note",
+    "branch": "cm-14.1"
+  },
+  {
+    "remote": "Meizu-M3-Note"
+    "repository": "proprietary_vendor_meizu_m3note",
+    "target_path": "vendor/meizu/m3note",
+    "branch": "cm-14.1"
+  },
+  {
+    "remote": "LineageOS"
+    "repository": "android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "cm-14.1"
+  }
+]
