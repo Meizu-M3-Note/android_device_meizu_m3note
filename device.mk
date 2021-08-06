@@ -128,7 +128,8 @@ PRODUCT_PACKAGES += \
     libshim_gui \
     libshim_ui \
     libshim_sensorlistener \
-    libshim_program_binary
+    libshim_program_binary \
+    libshim_surface
 
 # Permissions
 PRODUCT_COPY_FILES += \
