@@ -44,6 +44,10 @@ on init
     mkdir /protect_s 0771 system system
     #create mountpoint for persist partition
     mkdir /persist 0771 system system
+    
+    # Compatibility with old nvram blobs
+    symlink /dev/block/mmcblk0p19 /dev/nvram
+    symlink /dev/block/mmcblk0p8 /dev/pro_info
 
 # Create CIP mount point
     mkdir /custom
