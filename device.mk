@@ -134,7 +134,7 @@ PRODUCT_PACKAGES += \
     libshim_icu \
     libshim_ssl \
     libshim_crypto \
-    libshim_string16
+    libshim_string
 
 # Permissions
 PRODUCT_COPY_FILES += \

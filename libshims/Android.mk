@@ -107,7 +107,7 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := string.cpp
-LOCAL_MODULE := libshim_string16
+LOCAL_MODULE := libshim_string
 LOCAL_SHARED_LIBRARIES := libutils
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
