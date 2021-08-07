@@ -149,7 +149,8 @@ LINKER_FORCED_SHIM_LIBS := \
     /system/lib64/libmpe.sensorlistener.so|libshim_sensorlistener.so \
     /system/lib/libmmsdkservice.feature.so|libshim_gui.so \
     /system/bin/mtk_agpsd|libshim_crypto.so \
-    /system/lib/libmmsdkservice.feature.so|libshim_string16.so
+    /system/lib/libmmsdkservice.feature.so|libshim_string16.so \
+    /system/lib/libshowlogo.so|libshim_gui.so
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
