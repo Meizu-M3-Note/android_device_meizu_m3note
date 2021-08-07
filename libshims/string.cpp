@@ -23,3 +23,8 @@ extern "C" int _ZN7android8String165setToEPKDsj() {return 0;}
 extern "C" int _ZN7android8String165setToEPKtj() {
     return _ZN7android8String165setToEPKDsj();
 }
+
+extern "C" int _ZN7android7String8C1EPKDij() {return 0;}
+extern "C" int _ZN7android7String8C1EPKtj() {
+    return _ZN7android7String8C1EPKDij();
+}
