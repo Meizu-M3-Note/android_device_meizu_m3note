@@ -89,7 +89,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_android \
     libion \
-    libstlport
+    libstlport \
+    libgui_ext \
+    libui_ext \
+    libgralloc_extra
 
 # Keyhandler
 PRODUCT_PACKAGES += \
