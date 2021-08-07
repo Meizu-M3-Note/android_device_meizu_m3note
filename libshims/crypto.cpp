@@ -16,3 +16,7 @@ extern "C" void *CRYPTO_realloc(void *ptr, size_t new_size) {
 extern "C" void CRYPTO_free(void *ptr) { 
 	return OPENSSL_free(ptr);
 }
+
+extern "C" void CRYPTO_lock(int mode, int type, const char *file, int line) {
+    CRYPTO_lock(mode, type, file, line);
+}
