@@ -151,7 +151,8 @@ LINKER_FORCED_SHIM_LIBS := \
     /system/bin/mtk_agpsd|libshim_crypto.so \
     /system/lib/libmmsdkservice.feature.so|libshim_string.so \
     /system/lib/libshowlogo.so|libshim_gui.so \
-    /system/lib/libmtk_vt_service.so|libshim_string.so
+    /system/lib/libmtk_vt_service.so|libshim_string.so \
+    /system/lib/libmtk_vt_service.so|libshim_vtservice.so
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
