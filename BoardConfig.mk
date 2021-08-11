@@ -148,7 +148,11 @@ LINKER_FORCED_SHIM_LIBS := \
     /system/lib/libmmsdkservice.feature.so|libshim_string.so \
     /system/lib/libshowlogo.so|libshim_gui.so \
     /system/lib/libmtk_vt_service.so|libshim_string.so \
-    /system/lib/libmtk_vt_service.so|libshim_vtservice.so
+    /system/lib/libmtk_vt_service.so|libshim_vtservice.so \
+    /system/lib/libbinder.so|libshim_binder.so \
+    /system/lib64/libbinder.so|libshim_binder.so \
+    /system/lib/libpqservice.so|libshim_binder.so \
+    /system/lib64/libpqservice.so|libshim_binder.so
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
