@@ -152,7 +152,8 @@ LINKER_FORCED_SHIM_LIBS := \
     /system/lib/libbinder.so|libshim_binder.so \
     /system/lib64/libbinder.so|libshim_binder.so \
     /system/lib/libpqservice.so|libshim_binder.so \
-    /system/lib64/libpqservice.so|libshim_binder.so
+    /system/lib64/libpqservice.so|libshim_binder.so \
+    /system/lib/libvtmal.so|libshim_vtservice.so
 
 # Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_8_X

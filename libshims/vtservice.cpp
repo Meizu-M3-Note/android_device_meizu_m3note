@@ -39,4 +39,6 @@ extern "C" {
    bool _ZN7android15TimedEventQueue11cancelEventEi(int32_t event_id) {
        return (event_id == 0); 
    }
+
+   void _ZN7android11MPEG4WriterC1EPKc() { }
 }
